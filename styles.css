@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*------------------------------------barrra de navegacion--------------------------------------------------*/
+.barra_superior {
+    display: flex;
+    width: 100%;
+    
+    
+    
+}
+.navegacion_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .navegacion_principal {
+       flex-direction: row;
+    }
+}
+
+.logobarra {
+    width: 10%;
+}
+
+
+@media (max-width: 768px) {
+    .logobarra {
+     width: 40%;
+    }
+
+
+ }
+ 
+
+.navegacion_principal a {
+    font-size: 0,9rem;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+@media (min-width: 768px) {
+    .navegacion_principal a {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+/*-------------------------------------Neumaticos de auto y camioneta---------------------------------*/
+.header_neumaticos {
+    display: flex;
+    justify-content: center;
+    color: rgb(205, 204, 204);
+    background-color: rgb(46, 46, 46);
+    font-size: 12px;
+}
+
+
+/*-------------------------------------slider---------------------------------*/
+.slider {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+   
+  
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 300%;
+    animation: slider 15s infinite alternate;
+    
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    
+}
+
+
+.img_slider {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slider {
+            0% {margin-left: 0;}
+            30% {margin-left: 0;}
+
+            35% {margin-left: -100%;}
+            65% {margin-left: -100%;}
+
+            70% {margin-left: -200%;}
+            100% {margin-left: -200%;}
+            
+    
+                           }
+
+/*-----------------------------------------------telefono_slider-------------------------------------------------*/
+.telefono_slider {
+    position: absolute;
+    right: 0;
+    top: 14%;
+    color: white;
+    font-size: 70%;
+}
+
+@media (min-width: 768px) {
+    .telefono_slider {
+       font-size: 25px; 
+    }
+}
+
+.telefono_fijo {
+    position: absolute;
+    font-size: 14px;
+   
+}
+
+
+.contenedor_slider {
+    height: 100%;
+    
+}
+
+/*--------------------------------banner cotiza ahora---------------------------------------------*/
+
+.contenedor_banner {
+    margin-top: 0;
+    background-image:url(img/back_call_to_action.jpg);
+    display: flex;  
+    bottom: 410px;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+@media (min-width: 768px){
+.contenedor_banner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+}
+
+
+.boton_whatsapeannos {
+    width: 120px;
+}
+
+.boton_llamanos{
+    width: 120px;
+    margin-top: 10px;
+}
+
+
+.img_boton_banner {
+    max-width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .boton_whatsapeannos {
+        width: 200%;
+        
+
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .boton_llamanos {
+        width: 200%;
+        margin-top: 0;
+        margin-left: 15px;
+        
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .botones_banner {
+        display: flex;
+        margin-bottom: 10px;
+    }
+}
+
+.cotiza_estamos_en_linea {
+  height: 40px;
+}
+
+.cotiza_estamos_en_linea img {
+    height: inherit;
+}
+
+@media (min-width: 768px) {
+    .cotiza_estamos_en_linea {
+        height: 80%;
+    }
+    
+}
+
+/*-----------------------------seccion nuestros servicios-------------------------------------------*/
+
+.nuestros_servicios {
+    background-color: #0c101c;
+    padding: 50px;
+   
+}
+
+.img_servicio {
+   max-width: 290px;
+   width: 100%;
+   list-style: none;
+}
+
+li.img_servicio img {
+    max-width: 100%;
+    max-height: 100%;
+   
+        
+}
+
+.img_servicios {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap
+
+}
+
+.img_servicio {
+    margin: 10px;
+    }
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 30px;
+    position: relative;
+    bottom: 20px;
+    color: white;
+}
+
+
+/*------------------------------------------------Linea de productos-------------------------------------------------------------*/
+
+.titulo_linea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.linea-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.linea-items h3 {
+    font-size: 30px;
+    
+}
+
+.linea-items p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #5d5d5d;
+}
+
+.linea-item {
+    display: flex;
+    
+    flex-direction: column;
+    width: 200px;
+    
+    
+}
+
+.linea-item img {
+width: 120px;
+margin-top: 0px;
+margin-bottom: 30px;
+}
+
+.linea-item .borde {
+    width: 100%;
+    background-color: red;
+    padding: 3px;
+    margin-bottom: 0px;
+   
+
+}
+
+@media (min-width: 768px) {
+    .linea-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        margin: 10px;
+        align-items: flex-start;
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .linea-item {
+        margin: 10px;
+        
+    }
+}
+
+/*------------------------------algunos modelos destacados----------------------------*/
+.productos h2 {
+
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+
+.producto {
+  display: flex;
+  width: 320px;
+  height: 187px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.producto-imagen img {
+   max-height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marca {
+    width: 153px;
+    
+}
+
+.productos h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.producto-data {
+    background-color: #dbdbdc;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .producto-imagen {
+        width: 120%;
+    }
+}
+
+@media (min-width: 768px) {
+    .producto-data {
+        width: 120%;
+        display: grid;
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .producto {
+        width: 550px;
+        height: 232px;
+        margin: 20px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .productos h2 {
+        font-size: 170%;
+        margin-top: 10px;
+        color: #3d3d3d;
+    }
+}
+
+.img_no_encontraste {
+    width: 80%;
+    margin-top: 150px;
+   display: flex;
+   
+}
+
