@@ -1,0 +1,26 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "este proyecto es una pagina web estatica la cual tiene como objetivo atraer clientes mediante publicidad de google ads y luego redirigr ese trafico a whatsapp mediante el boton del inicio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezepereiraa/PreEntrega2-Pereira.git"
+  },
+  "keywords": [neumaticos, cubiertas, balanceo, alineacion, ruedas],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezepereiraa/PreEntrega2-Pereira/issues"
+  },
+  "homepage": "https://github.com/ezepereiraa/PreEntrega2-Pereira#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
